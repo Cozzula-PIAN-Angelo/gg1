@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>FORM</h1>
+        <nav>
+            <ul>
+                <li><a href="prova.html">tabelle</a></li>
+                <li><a href="form.html">FORM</a></li>
+                <li><a href="IMG.html">GIF</a></li>
+                <li><a href="layout.html">layout</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <form method="post" action="grazie.html">
+        <label for="name">nome completo</label>
+        <input type="text" id="name" name="name" placeholder="inserisci il nome" required/>
+        <label for="address">INDIRIZZO</label>
+        <input type="text" id="address" name="address" placeholder="inserisci INDIRIZZO"/>
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" placeholder="inserisci la tua email" required/>
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" placeholder="inserisci username" required/>
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" placeholder="inserisci la tua password" required/>
+        <label for="date">date</label>
+        <input type="date" id="date" name="dare" placeholder="inserisci il tuo compleanno" required/>
+        <input type="number" id="cousers" placeholder="numero di corsi" min="1" max="5"/>
+        <label for="number">Numero di corsi</label>
+        <label for="frequensy"></label><h4>segli la frequenza</h4></label>
+        
+        <select>
+            <option value="" selected></option>
+            <option value="FT" selected>FULL</option>
+            <option value="PF" selected>PART</option>
+            <option value="SR" selected>SERALE</option>
+        </select>
+        <label for="message"> inviaci un messaggio</label>
+            <textarea id="message" name="message" rows="3" cols="50" placeholder="scrivi ora"></textarea>
+        
+            <h4>lingua</h4>
+            <input type="checkbox" id="html" name="html" value=""html/>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="css" value="css"/>
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="js" value="js"/>
+            <label for="js">JS</label>
+            <input type="checkbox" id="java" name="java" value="java"/>
+            <label for="java">JAVA</label>
+            <input type="checkbox" id="php" name="php" value="php"/>
+            <label for="php">PHP</label>
+
+            <H4> SELEZIONA UN TIPO DI CORSO</H4>
+            <input type="radio" id="fullstack" name="courstype" value="fullstack"/>
+            <label for="fullstack">fullstack</label>
+            <input type="radio" id="frontend" name="courstype" value="frontend"/>
+            <label for="frontend">frontend</label>
+            <input type="radio" id="backend" name="courstype" value="backend"/>
+            <label for="backend">back-end</label>
+            
+        <button type="submit" id="sendform">INVIA</button>
+        <button type="reset" id="ClearForm">Cancella</button>
+    </form>
+
+
+    
+</body>
+</html>
